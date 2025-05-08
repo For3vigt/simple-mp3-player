@@ -44,7 +44,7 @@ def add_file():
         button = create_styled_button(
             samples_frame,
             text=f"{filename}",
-            command=lambda: play_sound(file_path)
+            command=lambda path=file_path: play_sound(path)
         )
         button.pack(side=tk.LEFT, padx=15, pady=15)
 
